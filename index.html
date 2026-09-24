@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSS3 Multi-Column Layout</title>
+    <meta charset="UTF-8">
+    <title>CSS3 Column Features</title>
 
-<style>
-/* Write the CSS required for this page here */
-</style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
 
+        h1 {
+            text-align: center;
+            color: darkblue;
+            column-span: all;
+        }
+
+        .columns {
+            column-count: 3;
+            column-gap: 30px;
+            column-rule: 3px solid gray;
+            text-align: justify;
+            padding: 15px;
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
-/* Design the page for 3 column web page here */
+
+    <h1>CSS3 Multi-Column Layout</h1>
+
+    <div class="columns">
+
+        <p>
+            CSS3 provides multi-column layout features that allow content
+            to be displayed in multiple columns, similar to newspapers and
+            magazines. It helps improve readability and makes efficient use
+            of available space.
+        </p>
+
+        <p>
+            The <strong>column-count</strong> property specifies the number
+            of columns. The <strong>column-gap</strong> property defines the
+            space between columns, while the
+            <strong>column-rule</strong> property adds a line between them.
+        </p>
+
+        <p>
+            Multi-column layouts are useful for articles, blogs, magazines,
+            and reports. They provide a clean and attractive presentation of
+            long text content without requiring complex HTML structures.
+        </p>
+
+        <p>
+            CSS3 column properties make web pages responsive and easier to
+            maintain. They improve the visual appearance of text and enhance
+            the overall user experience.
+        </p>
+
+    </div>
+
 </body>
 </html>
